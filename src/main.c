@@ -3,13 +3,14 @@
 #include <windows.h>
 
 #include "operation_memory.h"
+#include "app.h"
 
 int main() {
     //---------- Define values ----------
-    DWORD PID = 36556;
+    DWORD PID = 6952;
 
-    LPVOID int_address = (LPVOID)0x0000004030FFFA2C;
-    LPVOID str_address = (LPVOID)0x0000004030FFFA26;
+    LPVOID int_address = (LPVOID)0x000000E479DFF6CC;
+    LPVOID str_address = (LPVOID)0x000000E479DFF6C6;
 
     //---------- Read Int ----------
     int16_t value_memory_int;

@@ -10,7 +10,9 @@ file(GLOB SOURCES "src/*.c")
 
 add_executable(${PROJECT_NAME} ${SOURCES}
         src/operation_memory.c
-        include/operation_memory.h)
+        include/operation_memory.h
+        include/app.h
+        src/app.c)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
         RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
